@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Julee&family=Kanit:wght@500&family=Kaushan+Script&family=Lora&family=Montserrat:wght@600&family=Mulish:wght@300&family=Open+Sans:wght@300&family=Poppins:wght@300;400;500;600&family=Roboto&family=VT323&family=Ysabeau+Office&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+    font-family:'Poppins', sans-serif;
+}
+section{
+  
+    background-color: #c2dde6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.mainNav{
+  z-index: 1000;
+}
+.navbar1{
+  z-index: 1000;
+   position: fixed;
+   width: 100vw;
+   height: 6rem;
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
+   padding-left: 4rem;
+   background-color: transparent;
+}
+.navbar2{
+  z-index: 1000;
+   position: fixed;
+   width: 100vw;
+   height: 6rem;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   padding-left: 50rem;
+   background-color: transparent;
+}
+.navbar1 img{
+    filter: invert();
+   width: 4em;
+}
+.logoText{
+    font-weight: 600;
+    font-size: 2.5rem;
+    color: rgb(255, 255, 255);
+}
+.navbar2 a{
+    position: relative;
+    color: #000;
+    text-decoration: none;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    outline: none;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+.navbar2 a:hover{
+    color: rgb(232, 232, 232);
+    background-size: 0 0.1em, 100% 0.1em;
+}
+.navbar2 a::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+  }
+.navbar2  a:hover::before {
+    transform: scaleX(1);
+  }
+  .card-img-top{
+height: 15rem;
+object-fit: contain;
+  }
+  
+  .slide-container .slide-content .card-wrapper .card{
+    background-color: red;
+  }
+  .carousel-inner,.carousel-item .carimg{
+    width: 100vw;
+}
+.carimg{
+ width: 100vw;
+ height: 100vh;
+}
+.mainCar{
+  
+}
+footer {
+  background-color: #333333; 
+  color: #fff; 
+  text-align: center;
+  padding: 10px;
+  position: absolute; 
+  width: 100%; 
+  bottom: 0; 
+  height: 3rem;
+}
